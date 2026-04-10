@@ -43,22 +43,32 @@
     <nav class="glass sticky top-[40px] z-40 w-full border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="https://i.ibb.co/JRpZjrg4/IMG-1662-Photoroom.png" alt="ClaryFi Logo" class="h-16 md:h-24 w-auto object-contain" onerror="this.src='https://via.placeholder.com/200x80?text=ClaryFi'">
+                <img src="IMG_1662.png" alt="ClaryFi Logo" class="h-12 md:h-24 w-auto object-contain" onerror="this.src='https://via.placeholder.com/200x80?text=ClaryFi'">
             </div>
             
             <div class="hidden lg:flex space-x-8 items-center text-sm font-bold uppercase tracking-wider">
                 <a href="#about" class="text-gray-600 hover:text-claryfi-teal transition">About</a>
                 <a href="#services" class="text-gray-600 hover:text-claryfi-teal transition">Services</a>
                 <a href="#pricing" class="text-gray-600 hover:text-claryfi-teal transition">Pricing</a>
-                
                 <div class="flex items-center space-x-4 border-l pl-6 border-gray-200">
                     <a href="#" class="text-[#0077B5] hover:scale-110 transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
                     <a href="#" class="text-[#E4405F] hover:scale-110 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
-                    <a href="#" class="text-[#1877F2] hover:scale-110 transition"><i class="fa-brands fa-facebook text-xl"></i></a>
                 </div>
-
                 <a href="#contact" class="gradient-bg text-white px-8 py-3 rounded-full shadow-lg hover:shadow-claryfi-teal/30 transition-all">Book Now</a>
             </div>
+
+            <div class="lg:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-claryfi-blue text-3xl focus:outline-none">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-100 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#about" class="block text-lg font-bold text-claryfi-blue border-b border-gray-50 pb-2">About Us</a>
+            <a href="#services" class="block text-lg font-bold text-claryfi-blue border-b border-gray-50 pb-2">Services</a>
+            <a href="#pricing" class="block text-lg font-bold text-claryfi-blue border-b border-gray-50 pb-2">Pricing</a>
+            <a href="#contact" class="block gradient-text font-bold text-xl pt-2">Book Your Session</a>
         </div>
     </nav>
 
@@ -272,6 +282,20 @@
                     submitBtn.innerHTML = "Submit Details";
                 });
         });
+        // Mobile Menu Toggle Logic
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
     </script>
 </body>
 </html>
