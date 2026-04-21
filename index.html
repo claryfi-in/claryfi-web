@@ -90,6 +90,7 @@
         .accordion-button[aria-expanded="true"] .accordion-icon { transform: rotate(180deg); }
         .accordion-icon { transition: transform 0.3s ease; }
         .section-anchor { scroll-margin-top: 130px; }
+        .button, a { transition: all 0.25s ease; }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-white antialiased">
@@ -140,31 +141,45 @@
     </nav>
 
     <main id="main-content">
-        <section class="relative pt-24 pb-32 bg-gradient-to-b from-claryfi-light to-white overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-                <div class="text-center lg:text-left">
-                    <p class="text-claryfi-teal font-semibold uppercase tracking-[0.22em] text-sm mb-5">Career Guidance in Kerala</p>
-                    <h1 class="text-5xl lg:text-7xl font-extrabold text-claryfi-blue leading-[1.1] mb-8">
-                        Online <span class="gradient-text">Career Guidance</span> in Kerala for Students, Graduates, and Professionals
-                    </h1>
-                    <p class="text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">
-                        ClaryFi offers affordable online career counselling in Kerala with personalized guidance, practical roadmap planning, and clear next-step advice.
-                    </p>
-                    <p class="text-base text-gray-500 mb-12 max-w-xl leading-relaxed">
-                        Whether you need help after 12th, after graduation, or during a career switch, we help you choose the right direction with confidence.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-                        <a href="#contact" class="gradient-bg text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl hover:-translate-y-1 transition">Get Career Guidance @ ₹99</a>
-                        <a href="#pricing" class="bg-white text-claryfi-blue border-2 border-claryfi-blue px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-50 transition">View Career Plans</a>
-                    </div>
-                </div>
-                <div class="relative hidden lg:block">
-                    <div class="absolute -z-10 top-0 right-0 w-80 h-80 bg-claryfi-teal/20 rounded-full blur-[100px]"></div>
-                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=900&q=80" alt="Online career guidance consultation for students and professionals" width="900" height="700" loading="lazy" class="rounded-[3rem] shadow-2xl border-8 border-white">
-                </div>
-            </div>
-        </section>
+        <section class="relative bg-gradient-to-br from-[#0A1F2D] to-[#0F4C5C] text-white py-24 overflow-hidden">
 
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<p class="text-sm uppercase tracking-widest text-teal-300 mb-4">
+Career Guidance Platform
+</p>
+
+<h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+Confused about your <span class="text-teal-400">career?</span><br>
+Get clarity with <span class="text-teal-400">ClaryFi</span>
+</h1>
+
+<p class="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
+1-on-1 expert guidance + personalized roadmap to help you choose the right path with confidence.
+</p>
+
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+
+<a href="/career-clarity.html" 
+class="bg-teal-400 text-black px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition">
+Start for ₹99 →
+</a>
+
+<a href="#services" 
+class="border border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-black transition">
+Explore Plans
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section class="bg-white py-10 text-center">
+<p class="text-gray-600 text-sm">
+Trusted by students across Kerala • Affordable • Expert Guidance
+</p>
+</section>
         <section id="about" class="py-24 bg-white section-anchor">
             <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
                 <div class="relative">
@@ -192,43 +207,54 @@
             </div>
         </section>
 
-        <section id="services" class="py-24 bg-claryfi-light section-anchor">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-claryfi-teal mb-3">Career Guidance Services</p>
-                    <h2 class="text-4xl font-bold text-claryfi-blue mb-4">Choose the Right Career Guidance Plan</h2>
-                    <p class="text-gray-500 text-lg max-w-2xl mx-auto">From a quick expert consultation to a detailed career blueprint, ClaryFi offers affordable online career counselling based on your present stage and future goals.</p>
-                </div>
-                <div id="pricing" class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto section-anchor">
-                    <article class="bg-white p-12 rounded-[3rem] card-hover flex flex-col shadow-sm border border-gray-100">
-                        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-claryfi-teal mb-3">Starter Plan</p>
-                        <h3 class="text-2xl font-bold text-claryfi-blue mb-2">Career Guidance</h3>
-                        <div class="text-5xl font-black text-claryfi-teal mb-8">₹99</div>
-                        <p class="text-gray-600 mb-8 leading-relaxed">Best for students or graduates who want quick and affordable career counselling to resolve confusion and identify the right next step.</p>
-                        <ul class="space-y-5 mb-12 flex-grow">
-                            <li class="flex items-center text-gray-600"><i class="fa-solid fa-check-circle text-claryfi-teal mr-3 text-lg"></i> 1-on-1 expert career guidance call</li>
-                            <li class="flex items-center text-gray-600"><i class="fa-solid fa-check-circle text-claryfi-teal mr-3 text-lg"></i> Immediate doubt solving and clarity</li>
-                            <li class="flex items-center text-gray-600"><i class="fa-solid fa-check-circle text-claryfi-teal mr-3 text-lg"></i> Goal identification and next-step direction</li>
-                        </ul>
-                        <a href="#contact" class="text-center border-2 border-claryfi-blue text-claryfi-blue font-bold py-4 rounded-2xl hover:bg-claryfi-blue hover:text-white transition-all">Start Career Guidance</a>
-                    </article>
-                    <article class="gradient-bg p-12 rounded-[3rem] card-hover flex flex-col shadow-2xl text-white relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-6 opacity-10 text-9xl"><i class="fa-solid fa-rocket"></i></div>
-                        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-teal-100 mb-3">Advanced Plan</p>
-                        <h3 class="text-2xl font-bold mb-2">Career Blueprint</h3>
-                        <div class="text-5xl font-black mb-8">₹599</div>
-                        <p class="text-teal-50 mb-8 leading-relaxed">Ideal for people who want a deeper career roadmap with skill planning, market understanding, and a more structured growth strategy.</p>
-                        <ul class="space-y-5 mb-12 flex-grow text-teal-50">
-                            <li class="flex items-center"><i class="fa-solid fa-star mr-3 text-yellow-400"></i> Everything in the ₹99 career guidance plan</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check-circle mr-3 text-lg"></i> Personalized career growth roadmap</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check-circle mr-3 text-lg"></i> Salary and market insight discussion</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check-circle mr-3 text-lg"></i> Skill gap analysis for better planning</li>
-                        </ul>
-                        <a href="#contact" class="text-center bg-white text-claryfi-blue font-bold py-4 rounded-2xl shadow-xl hover:scale-105 transition-all">Get Full Career Blueprint</a>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <section id="services" class="py-20 bg-gray-50">
+
+<div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+
+<!-- ₹99 -->
+<div class="bg-white p-8 rounded-2xl shadow-lg border">
+
+<h3 class="text-xl font-bold mb-2">Career Clarity Session</h3>
+
+<p class="text-4xl font-extrabold text-teal-500 mb-4">₹99</p>
+
+<ul class="text-gray-600 space-y-2 mb-6">
+<li>✔ 1-on-1 Guidance</li>
+<li>✔ Clear Direction</li>
+<li>✔ Quick Doubt Solving</li>
+</ul>
+
+<a href="/career-clarity.html"
+class="block text-center bg-teal-500 text-white py-3 rounded-lg font-bold">
+Get Started →
+</a>
+
+</div>
+
+<!-- ₹599 -->
+<div class="bg-gradient-to-br from-[#0F4C5C] to-[#0A1F2D] text-white p-8 rounded-2xl shadow-xl">
+
+<h3 class="text-xl font-bold mb-2">Complete Career Roadmap</h3>
+
+<p class="text-4xl font-extrabold mb-4">₹599</p>
+
+<ul class="space-y-2 mb-6 text-gray-200">
+<li>✔ Full Career Plan</li>
+<li>✔ Skill Gap Analysis</li>
+<li>✔ Market Insights</li>
+<li>✔ Scholarship Guidance</li>
+</ul>
+
+<a href="/career-clarity.html"
+class="block text-center bg-teal-400 text-black py-3 rounded-lg font-bold">
+Get Full Plan →
+</a>
+
+</div>
+
+</div>
+
+</section>
 
         <section id="how-it-works" class="py-24 bg-white section-anchor">
             <div class="max-w-7xl mx-auto px-6 text-center">
@@ -323,6 +349,22 @@
                 </div>
             </div>
         </section>
+        <section class="py-20 bg-gradient-to-r from-teal-500 to-blue-600 text-white text-center">
+
+<h2 class="text-3xl font-bold mb-4">
+Still confused about your career?
+</h2>
+
+<p class="mb-6">
+Don’t guess your future. Get expert clarity today.
+</p>
+
+<a href="https://wa.me/917510623028?text=Hi%20I%20want%20career%20guidance"
+class="bg-white text-black px-8 py-4 rounded-xl font-bold">
+Start on WhatsApp →
+</a>
+
+</section>
 
         <section id="legal" class="py-24 bg-white section-anchor">
             <div class="max-w-5xl mx-auto px-6">
@@ -388,9 +430,12 @@
         <p class="text-xs text-gray-400">© 2026 ClaryFi.in - Online Career Guidance and Career Counselling Services in Kerala.</p>
     </footer>
 
-    <a href="https://wa.me/917510623028" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50" aria-label="Chat with ClaryFi on WhatsApp">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-    </a>
+    <a href="https://wa.me/917510623028?text=Hi%20I%20want%20₹99%20career%20session"
+class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-xl flex items-center gap-2 text-sm font-bold z-50">
+
+<i class="fa-brands fa-whatsapp"></i> Chat Now
+
+</a>
 
     <script>
     const form = document.getElementById('claryfi-form');
